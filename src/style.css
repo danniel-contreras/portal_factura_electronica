@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Hide default scrollbar */
+::webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Set height and width of perfect-scrollbar container */
+  .v-scrollbar > .scroll-content {
+    height: 100%;
+    width: 100%;
+  }
+  
+  /* Customize scrollbar */
+  .v-scrollbar > .ps {
+    position: relative;
+  }
+  
+  .v-scrollbar > .ps > .ps__rail-y {
+    background-color: #f2f2f2; /* Change color to your preference */
+    opacity: 1;
+    width: 10px; /* Change width to your preference */
+    border-radius: 5px; /* Change border radius to your preference */
+  }
+  
+  .v-scrollbar > .ps > .ps__thumb-y {
+    background-color: #000; /* Change color to your preference */
+    opacity: 0.4;
+    border-radius: 5px; /* Change border radius to your preference */
+  }
+  
+  .v-scrollbar > .ps > .ps__rail-y:hover,
+  .v-scrollbar > .ps > .ps__thumb-y:hover {
+    opacity: 0.7;
+  }
+  
