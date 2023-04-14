@@ -49,15 +49,14 @@
             >
           </li>
           <li v-for="(op) in menu.options" class="my-px">
-            <a
-              href="#"
+            <router-link :to="op.page.pagePath"
               class="flex flex-row items-center h-10 px-3 rounded-lg text-gray-300 hover:bg-gray-100 hover:text-gray-700"
             >
               <span class="flex items-center justify-center text-lg text-red-400">
                <oh-vue-icon :name="op.optionIcon"/>
               </span>
               <span class="ml-3">{{op.optionName}}</span>
-            </a>
+            </router-link>
           </li>
         </ul>
       </div>
